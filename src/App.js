@@ -4,6 +4,7 @@ import { Navigation } from './components/Navigation';
 import Header from './components/Header';
 import { AboutMe } from './components/AboutMe';
 import { isVisible } from './theme-functions';
+import { debounce } from 'lodash';
 
 class App extends Component {
   state = {
@@ -12,12 +13,12 @@ class App extends Component {
 
   isHeaderVisible = () => {
     this.setState({
-      headerVisible: isVisible('homescreen')
+      headerVisible: isVisible(document.getElementById('homescreen'))
     });
   };
 
   componentDidMount() {
-    window.addEventListener('scroll', this.isHeaderVisible);
+    window.addEventListener('scroll', debounce(this.isHeaderVisible, 150));
   }
 
   render() {
@@ -25,7 +26,9 @@ class App extends Component {
       <div className="App">
         <Navigation visible={!this.state.headerVisible} />
         <Header />
-        <AboutMe />
+        <div id="main">
+          <AboutMe />
+        </div>
       </div>
     );
   }

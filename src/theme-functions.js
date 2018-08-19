@@ -7,8 +7,7 @@ export function scrollToSection(id: string) {
   });
 }
 
-export function isVisible(id) {
-  let ele = document.getElementById(id);
+export function isVisible(ele) {
   let inVpFull = isElementInViewport(ele);
   let inVpPartial = isElementPartiallyInViewport(ele);
   return inVpFull || inVpPartial;

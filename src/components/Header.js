@@ -34,7 +34,7 @@ class Header extends Component {
         </div>
         <div
           className="arrow animated bounce"
-          onClick={() => scrollToSection('about-me')}
+          onClick={() => scrollToSection('main')}
         >
           <img
             width="20"

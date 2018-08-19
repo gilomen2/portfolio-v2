@@ -6,3 +6,26 @@
   -moz-osx-font-smoothing: grayscale;
   margin-top: 14px;
 }
+
+#main {
+  background: none;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.headlines {
+  font-family: 'limerick-xlightregular', sans-serif;
+  font-weight: 700;
+}
+
+.headlines div {
+  font-size: 0.22em;
+  color: #fefefe;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 500;
+}
+.headlines div p {
+  margin: 0px;
+  font-family: 'cooper_hewittlight', sans-serif;
+  font-size: 1.3em;
+}
