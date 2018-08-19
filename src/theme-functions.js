@@ -7,6 +7,13 @@ export function scrollToSection(id: string) {
   });
 }
 
+export function isVisible(id) {
+  let ele = document.getElementById(id);
+  let inVpFull = isElementInViewport(ele);
+  let inVpPartial = isElementPartiallyInViewport(ele);
+  return inVpFull || inVpPartial;
+}
+
 function isElementPartiallyInViewport(el) {
   let rect = el.getBoundingClientRect();
   let windowHeight =
@@ -31,11 +38,4 @@ function isElementInViewport(el) {
     rect.left + rect.width <= windowWidth &&
     rect.top + rect.height <= windowHeight
   );
-}
-
-export function isVisible(id) {
-  let ele = document.getElementById(id);
-  let inVpFull = isElementInViewport(ele);
-  let inVpPartial = isElementPartiallyInViewport(ele);
-  return inVpFull || inVpPartial;
 }

@@ -23,18 +23,21 @@
 }
 .navigation-wrapper {
   text-align: center;
+  text-transform: uppercase;
 }
-#navigation-name {
+
+.navigation-wrapper span {
+  padding-right: 15px;
+  font-weight: 700;
+  font-family: 'caviar_dreamsbold', sans-serif;
+}
+
+.navigation-wrapper span.navigation-name {
   font-size: 2em;
   font-family: 'limerick-xlightregular', sans-serif;
   padding-right: 23%;
   font-weight: 700;
   color: #32323c;
-}
-.navigation-wrapper span {
-  padding-right: 15px;
-  font-weight: 700;
-  font-family: 'caviar_dreamsbold', sans-serif;
 }
 .nav-link:hover {
   color: #32323c !important;
