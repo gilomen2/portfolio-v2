@@ -1,0 +1,25 @@
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+html {
+  -webkit-font-smoothing: antialiased;
+}
+html body {
+  overflow: hidden;
+  overflow-y: auto !important;
+  margin: 0;
+  font-family: 'cooper_hewittlight', sans-serif;
+  color: #4f4f4f;
+}
+body {
+  overflow: hidden;
+}
+
+body,
+html {
+  font-size: 100%;
+  padding: 0;
+  margin: 0;
+}
