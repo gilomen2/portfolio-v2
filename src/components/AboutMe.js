@@ -28,12 +28,13 @@ export class AboutMe extends Component {
   };
 
   componentDidMount() {
+    this.isInView();
     window.addEventListener('scroll', debounce(this.isInView, 150));
   }
 
   render() {
     return (
-      <div id="content">
+      <div id="about-content">
         <div id="about">
           <div className="headlines" id="headlines-about">
             ABOUT <p>ME</p>
@@ -54,7 +55,7 @@ export class AboutMe extends Component {
               <Skill text={'jquery'} strength={'70'} />
               <Skill text={'angularjs'} strength={'30'} />
               <Skill text={'bootstrap'} strength={'70'} />
-              <Skill text={'materialui'} strength={'70'} />
+              <Skill text={'material ui'} strength={'70'} />
               <Skill text={'agile'} strength={'70'} />
               <Skill text={'rails'} strength={'50'} />
               <Skill text={'wordpress'} strength={'50'} />
