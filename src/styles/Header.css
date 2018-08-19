@@ -142,11 +142,11 @@
 }
 
 /* Effect 1a */
-.no-touch .hi-icon-effect-1a .hi-icon:hover {
+.hi-icon-effect-1a .hi-icon:hover {
   color: #78b79c;
 }
 
-.no-touch .hi-icon-effect-1a .hi-icon:hover:after {
+.hi-icon-effect-1a .hi-icon:hover:after {
   -webkit-transform: scale(1);
   -moz-transform: scale(1);
   -ms-transform: scale(1);

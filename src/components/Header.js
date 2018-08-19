@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import '../styles/Header.css';
 import withSizes from 'react-sizes';
+import { scrollToSection } from '../theme-functions';
 
 class Header extends Component {
   render() {
@@ -31,7 +32,10 @@ class Header extends Component {
             <i className="fab fa-linkedin" />
           </a>
         </div>
-        <div className="arrow animated bounce">
+        <div
+          className="arrow animated bounce"
+          onClick={() => scrollToSection('about-me')}
+        >
           <img
             width="20"
             height="20"
