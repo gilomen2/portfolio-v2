@@ -15,10 +15,12 @@
   -o-transition: all 0.8s ease 0s;
   transition: all 0.8s ease 0s;
 }
+
 #about {
-  width: 85%;
+  width: 850px;
   margin: 0 auto;
 }
+
 #headlines-about {
   padding: 0px;
   font-size: 4em;

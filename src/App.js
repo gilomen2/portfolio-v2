@@ -5,6 +5,7 @@ import Header from './components/Header';
 import { AboutMe } from './components/AboutMe';
 import { isVisible } from './theme-functions';
 import { debounce } from 'lodash';
+import { Resume } from './components/Resume';
 
 class App extends Component {
   state = {
@@ -28,6 +29,7 @@ class App extends Component {
         <Header />
         <div id="main">
           <AboutMe />
+          <Resume />
         </div>
       </div>
     );
