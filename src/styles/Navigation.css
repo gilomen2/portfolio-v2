@@ -39,12 +39,21 @@
   font-weight: 700;
   color: #32323c;
 }
-.nav-link:hover {
-  color: #32323c !important;
+
+.nav-link {
   -webkit-transition: all 0.5s ease 0s;
   -moz-transition: all 0.5s ease 0s;
   -ms-transition: all 0.5s ease 0s;
   -o-transition: all 0.5s ease 0s;
   transition: all 0.5s ease 0s;
+}
+
+.nav-link.active {
+  color: #32323c;
+}
+
+.nav-link:hover {
+  color: #32323c !important;
+
   cursor: pointer;
 }

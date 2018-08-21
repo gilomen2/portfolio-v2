@@ -46,10 +46,6 @@
   margin-left: -25px;
   color: #f2f2f2;
   line-height: 30px;
-  /* background-image: linear-gradient(-30deg, #9BFFFC, #4cd2da);
-    background-image: -moz-linear-gradient(-30deg, #4cd2da, #9BFFFC);
-    background-image: -o-linear-gradient(-30deg, #9BFFFC, #4cd2da);
-    background-image: -webkit-linear-gradient(-30deg, #4cd2da, #9BFFFC); */
   -webkit-transition: all 0.7s ease 0s;
   -moz-transition: all 0.7s ease 0s;
   -ms-transition: all 0.7s ease 0s;

@@ -35,10 +35,11 @@ export class AboutMe extends Component {
   render() {
     return (
       <div id="about-content">
+        <div id="about-me-anchor" className="anchor" />
         <div id="about">
           <div className="headlines" id="headlines-about">
             ABOUT <p>ME</p>
-            <img id="my_photo" src={profilePhoto} />
+            <img id="my_photo" src={profilePhoto} alt={'Beth Gilomen'} />
           </div>
           <div id="about-me-box">
             Frontend engineer with excellent technical and design skills.
@@ -91,7 +92,9 @@ class Skill extends Component {
           width: this.props.isVisible ? `${strength}%` : '0%'
         }}
       >
-        <span className={!this.props.isVisible && 'hidden'}>{text}</span>
+        <span className={!this.props.isVisible ? 'hidden' : undefined}>
+          {text}
+        </span>
       </p>
     );
   }

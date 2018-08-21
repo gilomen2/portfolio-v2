@@ -1,0 +1,43 @@
+#content-contact {
+  border: none;
+  padding: 100px 0px 100px 0px;
+  position: relative;
+  overflow: hidden;
+  background: #e5e5ea url('../img/chat.png') no-repeat fixed 56% 510px;
+  -webkit-transition: all 0.8s ease 0s;
+  -moz-transition: all 0.8s ease 0s;
+  -ms-transition: all 0.8s ease 0s;
+  -o-transition: all 0.8s ease 0s;
+  transition: all 0.8s ease 0s;
+}
+
+#contact {
+  width: 850px;
+  margin: 0 auto;
+}
+
+#headlines-contact-beth {
+  font-size: 4em;
+  line-height: 0px;
+  color: #32323c;
+  text-align: center;
+  margin-top: 25px;
+}
+
+.headlines div p {
+  margin: 0px;
+  font-family: 'cooper_hewittlight', sans-serif;
+  font-size: 1.3em;
+  color: #32323c;
+  padding: 10px 0px;
+}
+
+.headlines div p a {
+  text-decoration: none;
+  color: #78b79c;
+}
+
+.headlines div p a:hover {
+  color: #32323c;
+  text-decoration: underline;
+}

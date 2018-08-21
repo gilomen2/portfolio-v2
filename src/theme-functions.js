@@ -38,3 +38,19 @@ function isElementInViewport(el) {
     rect.top + rect.height <= windowHeight
   );
 }
+
+export function getBodyRect() {
+  return document.body && document.body.getBoundingClientRect();
+}
+
+export function elementRect(element: ?HTMLElement) {
+  return element && element.getBoundingClientRect();
+}
+
+export function topYOffset(bodyRect: ?ClientRect, elemRect: ?ClientRect) {
+  return bodyRect && elemRect ? elemRect.top - bodyRect.top : 0;
+}
+
+export function bottomYOffset(bodyRect: ?ClientRect, elemRect: ?ClientRect) {
+  return bodyRect && elemRect ? elemRect.bottom - bodyRect.top : 0;
+}
