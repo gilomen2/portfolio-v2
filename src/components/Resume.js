@@ -1,11 +1,37 @@
 import React, { Component } from 'react';
 import '../styles/Resume.css';
+import { debounce } from 'lodash';
+import { isVisible } from '../theme-functions';
 
 export class Resume extends Component {
+  state = {
+    isSlidUp: false
+  };
+
+  componentDidMount() {
+    window.addEventListener('scroll', debounce(this.isVisible));
+  }
+
+  isVisible = () => {
+    if (
+      !this.state.isSlidUp &&
+      isVisible(document.getElementById('resume-content'))
+    ) {
+      this.setState({
+        isSlidUp: true
+      });
+    } else if (!isVisible(document.getElementById('resume-content'))) {
+      this.setState({
+        isSlidUp: false
+      });
+    }
+  };
+
   render() {
+    const { isSlidUp } = this.state;
     return (
       <div id="resume-content">
-        <div id="resume">
+        <div id="resume" className={`${isSlidUp ? 'raise-up' : undefined}`}>
           <div className="headlines" id="headlines-resume">
             RESUME
           </div>

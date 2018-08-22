@@ -5,7 +5,12 @@ import { scrollToSection } from '../theme-functions';
 
 export class Navigation extends Component {
   render() {
-    const { headerVisible, aboutVisible, resumeVisible } = this.props;
+    const {
+      headerVisible,
+      aboutVisible,
+      resumeVisible,
+      contactVisible
+    } = this.props;
     return (
       <nav id="navigation" className={!headerVisible ? 'visible' : undefined}>
         <div className="navigation-wrapper">
@@ -18,12 +23,13 @@ export class Navigation extends Component {
           />
           <NavItem
             className={'nav-link'}
-            active={resumeVisible && !aboutVisible}
+            active={resumeVisible && !aboutVisible && !contactVisible}
             scrollTo={'resume-content'}
             text={'Resume'}
           />
           <NavItem
             className={'nav-link'}
+            active={contactVisible}
             scrollTo={'contact'}
             text={'Contact'}
           />

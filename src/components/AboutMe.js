@@ -20,9 +20,13 @@ export class AboutMe extends Component {
         isAboutVisible: true,
         hasBecomeVisible: true
       });
-    } else {
+    } else if (!isVisible(document.getElementById('about-content'))) {
       this.setState({
-        isAboutVisible: isVisible(document.getElementById('about'))
+        isAboutVisible: false
+      });
+    } else if (isVisible(document.getElementById('about-content'))) {
+      this.setState({
+        isAboutVisible: true
       });
     }
   };
@@ -33,18 +37,22 @@ export class AboutMe extends Component {
   }
 
   render() {
+    const { isAboutVisible } = this.state;
     return (
       <div id="about-content">
         <div id="about-me-anchor" className="anchor" />
-        <div id="about">
+        <div
+          id="about"
+          className={`${isAboutVisible ? 'raise-up' : undefined}`}
+        >
           <div className="headlines" id="headlines-about">
             ABOUT <p>ME</p>
             <img id="my_photo" src={profilePhoto} alt={'Beth Gilomen'} />
           </div>
           <div id="about-me-box">
-            Frontend engineer with excellent technical and design skills.
-            Bridging the communication gap between technical, creative, and
-            business professionals.
+            Frontend engineer in Austin, Texas with excellent technical and
+            design skills. Bridging the communication gap between technical,
+            creative, and business professionals.
             <SkillsGroup isVisible={this.state.hasBecomeVisible}>
               <Skill text={'javascript'} strength={'85'} />
               <Skill text={'react'} strength={'60'} />

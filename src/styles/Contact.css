@@ -1,9 +1,15 @@
-#content-contact {
+#contact-content {
   border: none;
   padding: 100px 0px 100px 0px;
   position: relative;
   overflow: hidden;
   background: #e5e5ea url('../img/chat.png') no-repeat fixed 56% 510px;
+}
+
+#contact {
+  padding-top: 100px;
+  width: 850px;
+  margin: 0 auto;
   -webkit-transition: all 0.8s ease 0s;
   -moz-transition: all 0.8s ease 0s;
   -ms-transition: all 0.8s ease 0s;
@@ -11,9 +17,9 @@
   transition: all 0.8s ease 0s;
 }
 
-#contact {
-  width: 850px;
-  margin: 0 auto;
+#contact.raise-up {
+  padding-top: 0px;
+  padding-bottom: 100px;
 }
 
 #headlines-contact-beth {

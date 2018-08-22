@@ -1,14 +1,15 @@
 #about-content {
-  background-color: #f2f2f2;
-  padding: 200px 0px 0px 0px;
   position: relative;
   overflow: hidden;
-  background-image: url('../img/quote.png');
-  overflow: hidden;
   z-index: 11;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-position: 56% 240px;
+  background: #f2f2f2 url('../img/quote.png') no-repeat fixed 56% 240px;
+  padding-bottom: 65px;
+}
+
+#about {
+  width: 850px;
+  margin: 0 auto;
+  padding: 200px 0px 0px 0px;
   -webkit-transition: all 0.8s ease 0s;
   -moz-transition: all 0.8s ease 0s;
   -ms-transition: all 0.8s ease 0s;
@@ -16,9 +17,8 @@
   transition: all 0.8s ease 0s;
 }
 
-#about {
-  width: 850px;
-  margin: 0 auto;
+#about.raise-up {
+  padding-top: 100px;
 }
 
 #headlines-about {

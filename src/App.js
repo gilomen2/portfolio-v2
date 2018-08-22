@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './styles/App.css';
+import './styles/animate.css';
 import { Navigation } from './components/Navigation';
 import Header from './components/Header';
 import { AboutMe } from './components/AboutMe';
@@ -21,14 +22,16 @@ class App extends Component {
   state = {
     headerVisible: true,
     aboutVisible: false,
-    resumeVisible: false
+    resumeVisible: false,
+    contactVisible: false
   };
 
   sectionVisibility = () => {
     this.setState({
       headerVisible: isVisible(document.getElementById('homescreen')),
       aboutVisible: this.isAboutVisible(),
-      resumeVisible: this.isResumeVisible()
+      resumeVisible: this.isResumeVisible(),
+      contactVisible: this.isContactVisible()
     });
   };
 
@@ -44,6 +47,10 @@ class App extends Component {
       document.documentElement.scrollTop >= this.resumePosition.top &&
       document.documentElement.scrollTop <= this.resumePosition.bottom
     );
+  };
+
+  isContactVisible = () => {
+    return isVisible(document.getElementById('contact-content'));
   };
 
   setUpScrollPositions = () => {
@@ -68,25 +75,30 @@ class App extends Component {
         elementRect(document.getElementById('resume-content'))
       )
     };
+
     this.sectionVisibility();
   };
 
   componentDidMount() {
     this.setUpScrollPositions();
-    console.log('about', this.aboutPosition);
-    console.log('resume', this.resumePosition);
     window.addEventListener('scroll', debounce(this.sectionVisibility, 150));
     window.addEventListener('resize', debounce(this.setUpScrollPositions, 150));
   }
 
   render() {
-    const { headerVisible, aboutVisible, resumeVisible } = this.state;
+    const {
+      headerVisible,
+      aboutVisible,
+      resumeVisible,
+      contactVisible
+    } = this.state;
     return (
       <div className="App">
         <Navigation
           headerVisible={headerVisible}
           aboutVisible={aboutVisible}
           resumeVisible={resumeVisible}
+          contactVisible={contactVisible}
         />
         <Header checkVisibility={this.sectionVisibility} />
         <div id="main">
