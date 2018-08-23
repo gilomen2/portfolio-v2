@@ -8,7 +8,7 @@
 
 #contact {
   padding-top: 100px;
-  width: 850px;
+  width: auto;
   margin: 0 auto;
   -webkit-transition: all 0.8s ease 0s;
   -moz-transition: all 0.8s ease 0s;
@@ -46,4 +46,23 @@
 .headlines div p a:hover {
   color: #32323c;
   text-decoration: underline;
+}
+
+@media screen and (max-width: 667px) {
+  #contact-content {
+    background: #e5e5ea url('../img/chat.png') no-repeat fixed 38% 240px;
+  }
+
+  #contact {
+    width: auto;
+  }
+
+  #headlines-contact-beth {
+    font-size: 3em;
+    line-height: 1em;
+  }
+
+  #headlines-contact-beth div {
+    line-height: 0px;
+  }
 }

@@ -55,19 +55,24 @@
   opacity: 0.7;
 }
 
+.header-content {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+  height: inherit;
+  position: relative;
+}
+
 #header-headlines {
   font-family: 'limerick-xlightregular', sans-serif;
   color: #f2f2f2;
   text-align: center;
-  z-index: 3;
   font-size: 5em;
-  position: absolute;
   text-transform: uppercase;
-  margin: 0 auto;
-  width: 100%;
   font-weight: 700;
-  margin-top: -157.5px;
-  top: 50%;
   -moz-animation-iteration-count: 1 !important;
   -webkit-animation-iteration-count: 1 !important;
   -ms-animation-iteration-count: 1 !important;
@@ -97,12 +102,9 @@
   text-align: center;
   margin: 0 auto;
   padding: 2em 0 3em;
-  position: absolute;
   width: 100%;
   z-index: 10;
-  -webkit-perspective: 600;
   text-shadow: 0px 0px 50px rgb(82, 82, 82);
-  top: 55%;
   -moz-animation-iteration-count: 1 !important;
   -webkit-animation-iteration-count: 1 !important;
   -ms-animation-iteration-count: 1 !important;
@@ -232,45 +234,12 @@
   animation-duration: 2s;
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 667px) {
   #header-headlines {
-    font-size: 3.5em;
-    padding-left: 10px;
-    padding-right: 10px;
-    top: 50% !important;
-    animation: mymove 0s ease-in;
-    -webkit-animation: mymove 0s ease-in 1;
-    -moz-animation: mymove 0s ease-in 1;
-    -o-animation: mymove 0s ease-in 1;
-    -ms-animation: mymove 0s ease-in 1;
+    font-size: 2.5em;
   }
   #header-headlines p {
-    line-height: 0.9em;
-  }
-  .hi-icon-wrap {
-    display: none;
-  }
-}
-
-@media screen and (min-width: 650px) and (max-width: 850px) {
-  #header-headlines {
-    font-size: 3.5em;
-    padding-left: 10px;
-    padding-right: 10px;
-    top: 50% !important;
-    animation: mymove 0s ease-in;
-    -webkit-animation: mymove 0s ease-in 1;
-    -moz-animation: mymove 0s ease-in 1;
-    -o-animation: mymove 0s ease-in 1;
-    -ms-animation: mymove 0s ease-in 1;
-  }
-
-  .hi-icon-wrap {
-    top: 55% !important;
-    animation: mymove 0s ease-in;
-    -webkit-animation: mymove 0s ease-in 1;
-    -moz-animation: mymove 0s ease-in 1;
-    -o-animation: mymove 0s ease-in 1;
-    -ms-animation: mymove 0s ease-in 1;
+    line-height: 0.8em;
+    font-weight: 600;
   }
 }
