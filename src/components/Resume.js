@@ -60,27 +60,29 @@ export class Resume extends Component {
                 to={'September 2016'}
                 position={'Summit Platform Product Manager'}
               >
-                <li>Develop and maintain the product roadmap</li>
-                <li>Act as product owner on SCRUM team</li>
-                <li>Maintain the product backlog and prioritize development</li>
+                <li>Developed and maintain the product roadmap</li>
+                <li>Acted as product owner on SCRUM team</li>
                 <li>
-                  Manage all aspects of the software development lifecycle
+                  Maintained the product backlog and prioritize development
                 </li>
                 <li>
-                  Guide user interface additions and improvements with an eye
+                  Managed all aspects of the software development lifecycle
+                </li>
+                <li>
+                  Guided user interface additions and improvements with an eye
                   toward user experience
                 </li>
-                <li>Evaluate key market trends and competition</li>
+                <li>Evaluated key market trends and competition</li>
                 <li>
-                  Act as voice of customer and subject matter expert on all
+                  Acted as voice of customer and subject matter expert on all
                   aspects of the platform
                 </li>
                 <li>
-                  Ensure that the proper requirements are defined, understood,
+                  Ensured that the proper requirements are defined, understood,
                   and developed
                 </li>
                 <li>
-                  Lead customer training for platform development and ensure
+                  Led customer training for platform development and ensure
                   documentation accuracy and completeness
                 </li>
               </Position>
