@@ -35,9 +35,6 @@ export class Contact extends Component {
             <p>GET IN TOUCH</p>
             <div>
               <p>
-                317.361.5503 <i className="fas fa-phone" />
-              </p>
-              <p>
                 gilomen2@gmail.com <i className="fas fa-envelope" />
               </p>
               <p>

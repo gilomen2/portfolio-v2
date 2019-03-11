@@ -13,22 +13,25 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
-.icon-onespot:before {
+.icon-favor:before {
   content: '\e900';
 }
-.icon-corvisa:before {
+.icon-onespot:before {
   content: '\e901';
 }
-.icon-js:before {
+.icon-corvisa:before {
   content: '\e902';
 }
-.icon-shoretel:before {
+.icon-js:before {
   content: '\e903';
 }
-.icon-dailyillini:before {
+.icon-shoretel:before {
   content: '\e904';
 }
+.icon-dailyillini:before {
+  content: '\e905';
+}
+
 .custom-icon {
   display: inline-block;
   text-rendering: auto;

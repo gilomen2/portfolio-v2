@@ -38,8 +38,21 @@ export class Resume extends Component {
           <div className={'resume-details'}>
             <div id="resume-box">
               <Position
+                companyName={'Favor'}
+                icon={'favor'}
+                position={'Frontend Engineer'}
+              >
+                <li>
+                  Focusing primarily on Favor's consumer desktop and web apps
+                  using React, Redux, Node
+                </li>
+                <li>Strong focus on user experience</li>
+              </Position>
+              <Position
                 companyName={'OneSpot'}
                 icon={'onespot'}
+                from={'September 2016'}
+                to={'January 2019'}
                 position={'Frontend Engineer'}
               >
                 <li>
