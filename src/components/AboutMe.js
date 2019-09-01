@@ -55,8 +55,8 @@ export class AboutMe extends Component {
             creative, and business professionals.
             <SkillsGroup isVisible={this.state.hasBecomeVisible}>
               <Skill text={'javascript'} strength={'85'} />
-              <Skill text={'react'} strength={'60'} />
-              <Skill text={'redux'} strength={'30'} />
+              <Skill text={'react'} strength={'80'} />
+              <Skill text={'redux'} strength={'75'} />
               <Skill text={'webpack'} strength={'40'} />
               <Skill text={'html'} strength={'100'} />
               <Skill text={'css, sass, less'} strength={'100'} />
