@@ -43,10 +43,14 @@ export class Resume extends Component {
                 position={'Frontend Engineer'}
               >
                 <li>
-                  Focusing primarily on Favor's consumer desktop and web apps
-                  using React, Redux, Node
+                  Focusing on Favor’s consumer and internal web apps, using
+                  React, Redux, Node, Webpack
                 </li>
-                <li>Strong focus on user experience</li>
+                <li>
+                  Working closely with Product and Design to build beautiful,
+                  user-centric interfaces with extreme attention to detail and
+                  care for the user’s experience
+                </li>
               </Position>
               <Position
                 companyName={'OneSpot'}
