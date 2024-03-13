@@ -111,7 +111,10 @@ class Loader extends Component {
   render() {
     return (
       <div id="loader">
-        <img src={LoadingGif} />
+        <img
+          src={LoadingGif}
+          alt={'a loading gif indicating that the page is still loading'}
+        />
       </div>
     );
   }
