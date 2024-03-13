@@ -50,27 +50,24 @@ export class AboutMe extends Component {
             <img id="my_photo" src={profilePhoto} alt={'Beth Gilomen'} />
           </div>
           <div id="about-me-box">
-            Frontend engineer in Austin, Texas with excellent technical and
-            design skills. Bridging the communication gap between technical,
-            creative, and business professionals.
+            As a Frontend Engineer, I have a passion for developing user-centric
+            experiences. I leverage modern web technologies to create intuitive,
+            aesthetically pleasing, and accessible web apps. I am strongly
+            committed to understanding and advocating for the end user, while
+            working closely with product, designers, backend engineers, and
+            stakeholders. I am eager to bring my expertise to a team that values
+            innovation, user empathy, and collaboration, where I can contribute
+            to delivering outstanding user experiences.
             <SkillsGroup isVisible={this.state.hasBecomeVisible}>
-              <Skill text={'javascript'} strength={'85'} />
-              <Skill text={'react'} strength={'80'} />
+              <Skill text={'javascript'} strength={'100'} />
+              <Skill text={'react'} strength={'95'} />
               <Skill text={'redux'} strength={'80'} />
+              <Skill text={'typescript'} strength={'85'} />
+              <Skill text={'es6'} strength={'95'} />
               <Skill text={'webpack'} strength={'40'} />
               <Skill text={'html'} strength={'100'} />
               <Skill text={'css, sass, less'} strength={'100'} />
               <Skill text={'git'} strength={'90'} />
-              <Skill text={'jquery'} strength={'70'} />
-              <Skill text={'angularjs'} strength={'30'} />
-              <Skill text={'bootstrap'} strength={'70'} />
-              <Skill text={'material ui'} strength={'70'} />
-              <Skill text={'agile'} strength={'70'} />
-              <Skill text={'rails'} strength={'50'} />
-              <Skill text={'wordpress'} strength={'50'} />
-              <Skill text={'web design'} strength={'70'} />
-              <Skill text={'adobe illustrator'} strength={'70'} />
-              <Skill text={'adobe photoshop'} strength={'45'} />
             </SkillsGroup>
           </div>
         </div>

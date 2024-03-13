@@ -38,8 +38,8 @@ export class Contact extends Component {
                 gilomen2@gmail.com <i className="fas fa-envelope" />
               </p>
               <p>
-                <a href="http://bethgilomen.com">bethgilomen.com</a>{' '}
-                <i className="fas fa-globe" />
+                <a href="https://www.linkedin.com/in/bethgilomen">LinkedIn</a>{' '}
+                <i className="fab fa-linkedin" />
               </p>
             </div>
           </div>

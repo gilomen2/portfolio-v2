@@ -38,7 +38,44 @@ export class Resume extends Component {
           <div className={'resume-details'}>
             <div id="resume-box">
               <Position
+                companyName={'Atlassian'}
+                icon={'atlassian'}
+                position={'Frontend Engineer'}
+              >
+                <li>
+                  Building features for Confluence on a cross-functional team
+                  with engineers, product, and design
+                </li>
+                <li>
+                  Led the development of Presenter Mode, which was featured at
+                  TEAM '22, and is the subject of the most-liked community blog
+                  post of all time
+                </li>
+                <li>
+                  Contributing to major refactor of inline comments in
+                  Confluence
+                </li>
+                <li>
+                  Acting as my team's Customer Champion to ensure we are
+                  prioritizing customer support issues and practicing empathy
+                  for our users
+                </li>
+                <li>
+                  Writing unit tests and integration tests to ensure excellent
+                  code quality
+                </li>
+                <li>
+                  Debugging complex issues within a large-scale web application
+                </li>
+                <li>
+                  Improving developer productivity by building tooling to ease
+                  in-editor test running
+                </li>
+              </Position>
+              <Position
                 companyName={'Favor'}
+                from={'January 2019'}
+                to={'July 2020'}
                 icon={'favor'}
                 position={'Frontend Engineer'}
               >
